@@ -1,0 +1,2 @@
+backend/models/
+.mypy_cache

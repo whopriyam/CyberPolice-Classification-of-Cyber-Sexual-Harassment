@@ -1,0 +1,163 @@
+html {
+  scroll-behavior: smooth;
+}
+
+#headerSection {
+  background-color: black;
+  height: 47.2rem;
+  /* background-image: url("images/img3.jpg");
+  background-repeat: no-repeat;
+  background-size:100% 100%; */
+  /* background-blend-mode: lighten; */
+  text-align: center;
+  color: white;
+}
+
+#modelSection {
+  height: 47.2rem;
+  background-color: #484848;
+}
+
+#headerSection .headingandtext {
+  position: relative;
+  top: 10rem;
+  right: 18rem;
+  padding: 0 27%;
+}
+
+.headingandtext p {
+  margin-top: 4rem;
+}
+
+@media (min-width: 1350px) {
+  #headerSection .headingandtext {
+    right: 20rem;
+    padding: 0 28%;
+  }
+}
+
+@media (min-width: 1401px) {
+  #headerSection .headingandtext {
+    right: 20rem;
+    padding: 0 30%;
+  }
+}
+
+.headingandtext h1 {
+  font-size: 3rem;
+}
+
+#bgimg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0.3;
+  position: fixed;
+}
+
+.form__group {
+  position: relative;
+  padding: 15px 0 0;
+  width: 50%;
+  position: relative;
+  top: 10rem;
+  left: 2rem;
+}
+
+.form__field {
+  font-family: inherit;
+  width: 100%;
+  border: 0;
+  border-bottom: 2px solid #9b9b9b;
+  outline: 0;
+  font-size: 1.3rem;
+  color: #fff;
+  padding: 7px 0;
+  background: transparent;
+  transition: border-color 0.2s;
+
+}
+
+.form__field::placeholder {
+  color: transparent;
+}
+
+.form__field:placeholder-shown~.form__label {
+  font-size: 1.3rem;
+  cursor: text;
+  top: 20px;
+}
+
+.form__label {
+  position: absolute;
+  top: 0;
+  display: block;
+  transition: 0.2s;
+  font-size: 1rem;
+  color: #9b9b9b;
+}
+
+.form__field:focus {
+  padding-bottom: 6px;
+  font-weight: 700;
+  border-width: 3px;
+  border-image: linear-gradient(to right, #11998e, #38ef7d);
+  border-image-slice: 1;
+}
+
+.form__field:focus~.form__label {
+  position: absolute;
+  top: 0;
+  display: block;
+  transition: 0.2s;
+  font-size: 1rem;
+  color: #11998e;
+  font-weight: 700;
+}
+
+/* reset input */
+.form__field:required, .form__field:invalid {
+  box-shadow: none;
+}
+
+#submit-btn{
+  margin-top: 2rem;
+  margin-left: 90%;
+}
+
+#resultStatement{
+  position: relative;
+  top: 15rem;
+  margin-left: 2rem;
+  font-size: 2rem;
+}
+
+.header-title {
+  animation-delay: .8s;
+}
+
+.header-subtitle {
+  animation-delay: 1s;
+}
+
+.header-button {
+  animation-delay: 1.1s;
+}
+
+.animate-pop-in {
+  animation: pop-in .6s ease-out forwards;
+  opacity: 0;
+}
+
+/* Animations */
+@keyframes pop-in {
+  0% {
+    opacity: 0;
+    transform: translateY(-4rem) scale(.8);
+  }
+
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}

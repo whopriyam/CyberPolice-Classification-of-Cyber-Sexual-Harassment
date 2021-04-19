@@ -1,0 +1,9 @@
+# backend/requirements.txt
+fastapi[all]
+numpy==1.19.2
+uvicorn
+tensorflow==2.4.1
+tensorflow-hub==0.12.0
+bert-for-tf2==0.14.9
+idna==2.10
+requests==2.25.1
