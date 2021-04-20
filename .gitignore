@@ -1,2 +1,2 @@
-./WebApp/backend/models/untitled_model/*
-./WebApp/backend/__pycache__/*
+WebApp/backend/models/untitled_model/*
+WebApp/backend/__pycache__/*

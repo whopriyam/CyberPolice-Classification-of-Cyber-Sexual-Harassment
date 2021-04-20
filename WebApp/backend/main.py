@@ -2,6 +2,7 @@
 
 import uvicorn
 from fastapi import FastAPI
+from fastapi.middleware.cors import CORSMiddleware
 
 import config
 import numpy as np
@@ -9,6 +10,7 @@ import tensorflow as tf
 from bert import bert_tokenization
 import tensorflow_hub as hub
 from pydantic import BaseModel
+
 
 
 # IMPORTANT STATE VARIABLES
@@ -56,7 +58,19 @@ class Item(BaseModel):
 
 
 app = FastAPI()
+origins = [
+    "*"
+    # "http://localhost",
+    # "http://localhost:8501",
+]
 
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=origins,
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 @app.get("/")
 def helloWorld():

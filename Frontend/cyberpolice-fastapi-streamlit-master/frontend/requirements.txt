@@ -1,3 +1,0 @@
-# frontend/requirements.txt
-streamlit
-requests
